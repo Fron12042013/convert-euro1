@@ -1,0 +1,860 @@
+body {
+    background: red;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f8fc;
+    color: #222;
+}
+
+
+/* MENUJA */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,51,102,0.95);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+nav a {
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#00d084;
+}
+
+
+/* BALLINA */
+
+.hero {
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    url("https://images.unsplash.com/photo-1563013544-824ae1b704d3");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+
+.hero h1 {
+
+    font-size:70px;
+    letter-spacing:2px;
+
+}
+
+
+.hero p {
+
+    font-size:24px;
+    margin:20px 0 35px;
+
+}
+
+
+.hero a {
+
+    background:#00b050;
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.hero a:hover {
+
+    background:#008f40;
+
+}
+
+
+/* SEKSIONET */
+
+section {
+
+    padding:100px 10%;
+
+}
+
+
+h2 {
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+
+/* SHERBIMET */
+
+.services {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+
+.card {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+.card h3 {
+
+    color:#003366;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* TABELA */
+
+table {
+
+    width:100%;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+
+}
+
+
+th {
+
+    background:#003366;
+
+    color:white;
+
+}
+
+
+th,td {
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+
+/* KONTAKTI */
+
+#kontakt {
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+/* TELEFON */
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+display:block;
+
+margin:10px;
+
+}
+
+.hero h1{1:22 PM 7/16/2026
+
+font-size:45px;
+
+}
+.contact-box {
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+
+}
+
+
+.contact-box h3 {
+
+    color:#003366;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+.call-btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#00b050;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+.call-btn:hover {
+
+    background:#008f40;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+section {
+
+    animation: fadeUp 1s ease;
+
+}
+
+
+.card {
+
+    cursor:pointer;
+
+}
+
+
+.card:hover {
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.2);
+
+}
+
+
+/* Butoni i telefonit */
+
+.call-btn {
+
+    transition:.3s;
+
+}
+
+
+.call-btn:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+/* Pamje më elegante për tabelën */
+
+tr:hover {
+
+    background:#f0f8ff;
+
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+.logo-icon {
+
+    background:#00b050;
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:25px;
+
+}
+
+
+.logo span {
+
+    display:block;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:white;
+
+}
+
+
+.logo small {
+
+    display:block;
+
+    font-size:12px;
+
+    color:#d9eaff;
+
+    margin-top:3px;
+
+}
+
+
+
+.call-btn,
+.viber-btn {
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.call-btn {
+
+    background:#00b050;
+
+}
+
+
+.viber-btn {
+
+    background:#7360f2;
+
+}
+
+
+.call-btn:hover,
+.viber-btn:hover {
+
+    transform:scale(1.05);
+
+}
+
+.whatsapp-btn {
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.whatsapp-btn:hover {
+
+    background:#1da851;
+
+    transform:scale(1.05);
+
+}
+
+.viber-btn {
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    background:#7360f2;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.viber-btn:hover {
+
+    background:#5b48d8;
+
+    transform:scale(1.05);
+
+}
+
+/* Rregullim për telefon */
+
+@media (max-width:768px) {
+
+    header {
+        padding:20px 5%;
+    }
+
+
+    .logo {
+        margin-bottom:15px;
+    }
+
+
+    nav {
+        text-align:center;
+    }
+
+
+    nav a {
+        display:inline-block;
+        margin:8px;
+        font-size:14px;
+    }
+
+
+    .hero h1 {
+        font-size:45px;
+    }
+
+
+    .hero h3 {
+        font-size:20px;
+    }
+
+
+    .hero p {
+        font-size:18px;
+        padding:0 20px;
+    }
+
+
+    .hero a {
+
+        display:block;
+
+        width:80%;
+
+        margin:12px auto;
+
+    }
+
+
+    section {
+
+        padding:70px 5%;
+
+    }
+
+
+    h2 {
+
+        font-size:32px;
+
+    }
+
+
+    table {
+
+        font-size:14px;
+
+    }
+
+
+    .contact-box {
+
+        padding:25px 15px;
+
+    }
+
+}
+
+.map-btn {
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    background:#4285F4;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.map-btn:hover {
+
+    background:#2f6edb;
+
+    transform:scale(1.05);
+
+}
+
+.top-btn {
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    background:#003366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+
+.top-btn:hover {
+
+    background:#00b050;
+
+    transform:translateY(-5px);
+
+}
+
+/* Dizajn premium për kartelat */
+
+.card {
+
+    background: rgba(255,255,255,0.95);
+
+    border: 1px solid rgba(0,51,102,0.08);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.card h3 {
+
+    letter-spacing:0.5px;
+
+}
+
+
+.services {
+
+    align-items:stretch;
+
+}
+
+
+/* Efekt më modern për butonat */
+
+.call-btn,
+.whatsapp-btn,
+.viber-btn,
+.map-btn {
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+.call-btn:hover,
+.whatsapp-btn:hover,
+.viber-btn:hover,
+.map-btn:hover {
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+/* Statusi i biznesit */
+
+.status-box {
+
+    display:inline-block;
+
+    background:rgba(0,176,80,0.15);
+
+    color:#00b050;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+    border:1px solid #00b050;
+
+}
+
+/* Rregullime ekstra për telefon */
+
+@media(max-width:768px){
+
+    .hero {
+
+        padding:0 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    .hero h3 {
+
+        font-size:20px;
+
+    }
+
+
+    .hero p {
+
+        font-size:17px;
+
+        line-height:1.5;
+
+    }
+
+
+    .call-btn,
+    .whatsapp-btn,
+    .viber-btn,
+    .map-btn {
+
+        width:90%;
+
+        max-width:320px;
+
+        text-align:center;
+
+        display:block;
+
+        margin:12px auto;
+
+    }
+
+
+    .status-box {
+
+        font-size:14px;
+
+        max-width:90%;
+
+    }
+
+
+    .card {
+
+        padding:25px 20px;
+
+    }
+
+
+    table {
+
+        display:block;
+
+        overflow-x:auto;
+
+    }
+
+}
+
+}
